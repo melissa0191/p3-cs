@@ -23,7 +23,7 @@ start coding_. Remember to identify a single source of truth for your data.
 ## Instructions
 
 To get started, run `pipenv install` while inside of this directory. Then run
-`pipenv shell` to jump into the shell.
+`pipenv shell` to jump into the shell..
 
 Build out all of the methods listed in the deliverables. The methods are listed
 in a suggested order, but you can feel free to tackle the ones you think are
