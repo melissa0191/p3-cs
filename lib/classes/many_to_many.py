@@ -5,7 +5,7 @@ class Coffee:
 
     def __init__(self, name):
         self.name = name
-        
+   
     @property 
     def name(self):
         return self._name
@@ -17,7 +17,7 @@ class Coffee:
 
     def orders(self):
         return [order for order in Order.all if order.coffee is self]
-    
+     
     def customers(self):
         return list({order.customer for order in self.orders()})
     
@@ -26,6 +26,7 @@ class Coffee:
     
     def average_price(self):
         return mean([order.price for order in self.orders()])
+     
 
 class Customer:
     all = []
@@ -33,7 +34,7 @@ class Customer:
     def __init__(self, name):
         self.name = name
         type(self).all.append(self)
-    
+       
     @property
     def name(self):
         return self._name
@@ -106,3 +107,31 @@ class Order:
             and not hasattr(self, "price")
         ):
             self._price = price
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
